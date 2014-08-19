@@ -1,0 +1,29 @@
+<!-- add this code to the following files just before the closing head tag </head>
+ 
+C:\Program Files\Tableau\Tableau Server\8.2\wgserver\z5\WEB-INF\app\views\layouts\
+*  auth_layout.html.erb
+*  download_layout.html.erb
+*  embedded_authentication_layout.html.erb
+*  embedded_layout.html.erb
+*  licensing_layout.html.erb
+*  single_embedded_layout.html.erb
+*  single_layout.html.erb
+*  text_layout.html.erb
+*  welcome_layout.html.erb
+ 
+-->
+ 
+ 
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35433268-34']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>

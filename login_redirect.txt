@@ -1,0 +1,28 @@
+<!-- add this code to C:\Program Files\Tableau\Tableau Server\8.2\wgserver\z5\WEB-INF\app\views\shared\_login.html.erb just after the <div class="authHeader"> -->
+ 
+<script>
+     
+     function getUrlVars() {
+               var vars = {};
+               var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+               });
+               return vars;
+     }
+     
+     
+          var ref = document.referrer;
+          var path = location.href;
+          
+          
+          if (path.indexOf("?direct-login") == -1 && path.indexOf("t/public") == -1) {
+          
+               if ((ref.indexOf("localhost") !== -1 || ref.indexOf("127.0.0.1") !== -1 || ref.indexOf("dataviz") !== -1) && ref.indexOf("logout.php") == -1)  {
+                    window.location.replace("https://tableau-portal.mozilla.org/logout.php");
+               } else {
+                    window.location.replace("https://tableau-portal.mozilla.org/index.php?destination="+getUrlVars()["destination"]);
+               }   
+          
+          }
+  
+     </script>

@@ -1,0 +1,4 @@
+<!-- Add the following to C:\Program Files\Tableau\Tableau Server\8.2\wgserver\z5\WEB-INF\app\views\views\show.html.erb -->
+<!-- Just after <%- if view_invalid? -%> -->
+<!-- Comment out <!--<%= render(:partial => "/views/show_when_nil_view") %>--> -->
+<span style="font-color:red; font-size:18px">Oops! Looks like this view may not exist or you don't have permission. If you feel this is incorrect, please submit a request to gain access here:  <a href="https://mozilla.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=6618c2a254341100dc7e7f7375a65594&sysparm_link_parent=bf0149fbb9156400dc7ea1d3074d0ad8" target="_blank">Service Now Request</a></span>

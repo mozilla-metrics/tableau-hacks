@@ -1,4 +1,5 @@
 tableau-hacks
 =============
 
-Stuff we have done to our tableau server
+Stuff we have done to our tableau server.
+
